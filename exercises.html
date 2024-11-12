@@ -13,10 +13,10 @@
   </head>
   <body class="bg-body-secondary">
     <main>
-      <div
-        class="container w-50 bg-light m-5 mx-auto border border-3 border-primary-subtle rounded-4 shadow-lg"
-      >
-        <div class="row">
+      <div class="container w-50">
+        <div
+          class="row bg-light m-5 mx-auto border border-3 border-primary-subtle rounded-4 shadow-lg"
+        >
           <div class="col col-12">
             <form id="myForm" class="m-4">
               <div>
@@ -25,18 +25,20 @@
                   class="form-label fs-4 text-primary-emphasis"
                   >Nome utente
                 </label>
-                <span class="text-secondary lead d-none ps-4"
+                <span class="info text-secondary lead d-none ps-4"
                   >nome già salvato:
+                  <div
+                    id="oldUserName"
+                    class="info text-secondary lead d-inline-block"
+                  ></div>
                 </span>
-                <div
-                  id="oldUserName"
-                  class="text-secondary lead d-inline-block"
-                ></div>
+
                 <input
                   type="text"
                   class="form-control"
                   id="userName"
-                  placeholder="Mario Rossi"
+                  placeholder="Il tuo nome..."
+                  required
                 />
               </div>
               <div class="my-2">
@@ -50,6 +52,14 @@
                 </button>
               </div>
             </form>
+          </div>
+        </div>
+        <div
+          class="row bg-light m-5 mx-auto border border-3 border-primary-subtle rounded-4 shadow-lg"
+        >
+          <div class="col col-6 text-primary-emphasis">
+            <h3 class="d-inline-block fs-3 p-2 m-0">CONTATORE:</h3>
+            <span id="time" class="fs-3 d-inline-block">0</span>
           </div>
         </div>
       </div>
