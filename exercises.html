@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>JSON & storage Exercises</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body class="bg-body-secondary">
+    <main>
+      <div
+        class="container w-50 bg-light m-5 mx-auto border border-3 border-primary-subtle rounded-4 shadow-lg"
+      >
+        <div class="row">
+          <div class="col col-12">
+            <form id="myForm" class="m-4">
+              <div>
+                <label
+                  for="userName"
+                  class="form-label fs-4 text-primary-emphasis"
+                  >Nome utente
+                </label>
+                <span class="text-secondary lead d-none ps-4"
+                  >nome già salvato:
+                </span>
+                <div
+                  id="oldUserName"
+                  class="text-secondary lead d-inline-block"
+                ></div>
+                <input
+                  type="text"
+                  class="form-control"
+                  id="userName"
+                  placeholder="Mario Rossi"
+                />
+              </div>
+              <div class="my-2">
+                <button id="save" class="btn btn-outline-success">
+                  Salva nome utente
+                </button>
+              </div>
+              <div class="my-2">
+                <button id="cancel" class="btn btn-outline-danger">
+                  Cancella nome utente
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./exercises.js"></script>
+  </body>
+</html>
